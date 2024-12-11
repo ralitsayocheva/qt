@@ -19,7 +19,7 @@
             font-family: Arial, sans-serif;
         }
         img {
-            max-width: 90%;
+            max-width: 70%; /* Reduced the size */
             border: 5px solid #ffcc00;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
@@ -56,17 +56,30 @@
             animation: fall calc(1s + var(--time) * 1.5s) linear infinite;
             opacity: 0.9;
         }
+        .confetti .piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: hsl(calc(360 * var(--hue)), 100%, 50%);
+            animation: fall calc(2s + var(--time) * 1s) linear infinite;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <h1>🎉 We're going to see Larkin Poe! 🎶</h1>
     <img src="lark.jpg" alt="Larkin Poe Concert Tickets">
     <div class="confetti">
-        <div class="star" style="left: 10%; animation-duration: 2.5s; animation-delay: 0s;"></div>
-        <div class="star" style="left: 30%; animation-duration: 3s; animation-delay: 0.5s;"></div>
-        <div class="star" style="left: 50%; animation-duration: 3.5s; animation-delay: 1s;"></div>
-        <div class="star" style="left: 70%; animation-duration: 4s; animation-delay: 1.5s;"></div>
-        <div class="star" style="left: 90%; animation-duration: 4.5s; animation-delay: 2s;"></div>
+        <!-- Flying confetti -->
+        <div class="piece" style="left: 5%; --hue: 0.8; --time: 1.2;"></div>
+        <div class="piece" style="left: 15%; --hue: 0.4; --time: 0.5;"></div>
+        <div class="piece" style="left: 25%; --hue: 0.6; --time: 0.8;"></div>
+        <div class="piece" style="left: 35%; --hue: 0.2; --time: 1.0;"></div>
+        <div class="piece" style="left: 50%; --hue: 0.9; --time: 0.7;"></div>
+        <div class="piece" style="left: 65%; --hue: 0.3; --time: 1.4;"></div>
+        <div class="piece" style="left: 75%; --hue: 0.7; --time: 1.1;"></div>
+        <div class="piece" style="left: 85%; --hue: 0.1; --time: 1.5;"></div>
+        <div class="piece" style="left: 95%; --hue: 0.5; --time: 1.3;"></div>
     </div>
 </body>
 </html>
