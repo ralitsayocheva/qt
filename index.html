@@ -17,12 +17,14 @@
             overflow: hidden;
             color: #fff;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         img {
-            max-width: 50%; /* Reduced the size to 50% */
+            max-width: 80%; /* Adjusted for mobile-friendly size */
             border: 5px solid #ffcc00;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
         }
         .confetti {
             position: absolute;
@@ -64,10 +66,24 @@
             animation: fall calc(2s + var(--time) * 1s) linear infinite;
             border-radius: 50%;
         }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+            img {
+                max-width: 90%; /* Increase image size slightly for small screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>🎉 We're going to see Larkin Poe! 🎶</h1>
+    <h1>🎉 Free your schedule for the next year and be with me <3 🎶</h1>
     <img src="lark.jpg" alt="Larkin Poe Concert Tickets">
     <div class="confetti">
         <!-- Flying confetti -->
