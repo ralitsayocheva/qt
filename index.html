@@ -30,16 +30,16 @@
         h1 {
             color: #ca9f2f; /* Text color is yellow */
             font-family: 'Lobster', cursive; /* Lobster font */
-            font-size: 3rem;
+            font-size: 3.5rem; /* Increased size */
             margin: 10px 0;
-            text-shadow: 0 0 5px rgba(255, 204, 0, 0.589), 0 0 10px rgba(255, 204, 0, 0.5); /* Less glow effect on text */
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8), 0 0 20px rgba(255, 204, 0, 0.7); /* Enhanced glow effect on text */
         }
         h2 {
             color: #ca9f2f; /* Text color is yellow */
             font-family: 'Lobster', cursive; /* Lobster font */
-            font-size: 2rem;
+            font-size: 2.5rem; /* Slightly larger text */
             margin: 10px 0;
-            text-shadow: 0 0 5px rgba(255, 204, 0, 0.589), 0 0 10px rgba(255, 204, 0, 0.5); /* Less glow effect on text */
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8), 0 0 20px rgba(255, 204, 0, 0.7); /* Enhanced glow effect on text */
         }
         .confetti {
             position: absolute;
@@ -70,7 +70,7 @@
             height: 20px;
             background: hsl(calc(360 * var(--hue)), 100%, 50%);
             transform: rotate(calc(90deg * var(--angle)));
-            animation: fall calc(1s + var(--time) * 1.5s) linear infinite;
+            animation: fall calc(1s + var(--time) * 2s) linear infinite; /* Slowed down the fall */
             opacity: 0.9;
         }
         .confetti .piece {
@@ -78,13 +78,13 @@
             width: 10px;
             height: 10px;
             background: hsl(calc(360 * var(--hue)), 100%, 50%);
-            animation: fall calc(2s + var(--time) * 1s) linear infinite;
+            animation: fall calc(3s + var(--time) * 1.5s) linear infinite; /* Slowed down the fall */
             border-radius: 50%;
         }
         .emoji {
             position: absolute;
-            font-size: 2rem;
-            animation: fall calc(2s + var(--time) * 1s) linear infinite;
+            font-size: 1.5rem; /* Smaller size for emojis */
+            animation: fall calc(4s + var(--time) * 1.5s) linear infinite; /* Slower fall for emojis */
         }
         /* Media Query for smaller screens */
         @media (max-width: 600px) {
@@ -92,7 +92,7 @@
                 padding: 10px;
             }
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin: 10px 0;
                 padding: 0 15px; /* Adding some padding for better centering on mobile */
             }
@@ -114,11 +114,14 @@
         <div class="piece" style="left: 35%; --hue: 0.2; --time: 1.0;"></div>
         <div class="piece" style="left: 50%; --hue: 0.9; --time: 0.7;"></div>
         <div class="emoji" style="left: 10%; --time: 1.2;">🎁</div>
-        <div class="emoji" style="left: 25%; --time: 0.9;">🎄</div>
-        <div class="emoji" style="left: 40%; --time: 1.5;">💛</div>
-        <div class="emoji" style="left: 60%; --time: 1.1;">🎁</div>
-        <div class="emoji" style="left: 75%; --time: 0.7;">🎄</div>
-        <div class="emoji" style="left: 90%; --time: 1.3;">💛</div>
+        <div class="emoji" style="left: 20%; --time: 1.1;">🎄</div>
+        <div class="emoji" style="left: 30%; --time: 0.9;">💛</div>
+        <div class="emoji" style="left: 40%; --time: 1.3;">🎁</div>
+        <div class="emoji" style="left: 50%; --time: 1.0;">🎄</div>
+        <div class="emoji" style="left: 60%; --time: 1.4;">💛</div>
+        <div class="emoji" style="left: 70%; --time: 1.2;">🎁</div>
+        <div class="emoji" style="left: 80%; --time: 0.8;">🎄</div>
+        <div class="emoji" style="left: 90%; --time: 1.5;">💛</div>
     </div>
 </body>
 </html>
