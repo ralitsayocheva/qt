@@ -21,20 +21,21 @@
             text-align: center;
         }
         img {
-            max-width: 80%; /* Adjusted for mobile-friendly size */
+            max-width: 80%; 
             border: 5px solid #ca9f2f;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Glow effect on image frame */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
             margin-bottom: 20px;
         }
         h1 {
-            color: #ca9f2f; /* Text color is yellow */
-            font-family: 'Lobster', cursive; /* Lobster font */
-            font-size: 3.5rem; /* Increased size */
+            color: #ca9f2f; 
+            font-family: 'Lobster', cursive; 
+            font-size: 3.5rem; 
             margin: 10px 0;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8), 0 0 20px rgba(255, 204, 0, 0.7); /* Enhanced glow effect on text */
+            text-shadow: 0px 0px 2px #000000; 
+            -webkit-text-stroke: 1px #000000; 
         }
-        .confetti {
+             .confetti {
             position: absolute;
             top: 0;
             left: 0;
@@ -63,7 +64,7 @@
             height: 20px;
             background: hsl(calc(360 * var(--hue)), 100%, 50%);
             transform: rotate(calc(90deg * var(--angle)));
-            animation: fall calc(1s + var(--time) * 2s) linear infinite; /* Slowed down the fall */
+            animation: fall calc(1s + var(--time) * 2s) linear infinite;
             opacity: 0.9;
         }
         .confetti .piece {
@@ -71,15 +72,15 @@
             width: 10px;
             height: 10px;
             background: hsl(calc(360 * var(--hue)), 100%, 50%);
-            animation: fall calc(3s + var(--time) * 1.5s) linear infinite; /* Slowed down the fall */
+            animation: fall calc(3s + var(--time) * 1.5s) linear infinite;
             border-radius: 50%;
         }
         .emoji {
             position: absolute;
-            font-size: 1.5rem; /* Smaller size for emojis */
-            animation: fall calc(4s + var(--time) * 1.5s) linear infinite; /* Slower fall for emojis */
+            font-size: 1.5rem; 
+            animation: fall calc(4s + var(--time) * 1.5s) linear infinite;
         }
-        /* Media Query for smaller screens */
+        
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -87,10 +88,10 @@
             h1 {
                 font-size: 2.5rem;
                 margin: 10px 0;
-                padding: 0 15px; /* Adding some padding for better centering on mobile */
+                padding: 0 15px;
             }
             img {
-                max-width: 90%; /* Increase image size slightly for small screens */
+                max-width: 90%; 
             }
         }
     </style>
@@ -99,7 +100,6 @@
     <h1>🎉 Lets go! 🎉</h1>
     <img src="lark.jpg" alt="Larkin Poe Concert Tickets">
     <div class="confetti">
-        <!-- Flying confetti -->
         <div class="piece" style="left: 5%; --hue: 0.8; --time: 1.2;"></div>
         <div class="piece" style="left: 15%; --hue: 0.4; --time: 0.5;"></div>
         <div class="piece" style="left: 25%; --hue: 0.6; --time: 0.8;"></div>
