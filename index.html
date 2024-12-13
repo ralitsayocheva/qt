@@ -6,7 +6,6 @@
     <title>QT concert tickets</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        
         body {
             margin: 0;
             padding: 0;
@@ -36,7 +35,15 @@
             text-shadow: 0px 0px 2px #000000; 
             -webkit-text-stroke: 1px #000000; 
         }
-             .confetti {
+        h2 {
+            color: #ca9f2f; 
+            font-family: 'Lobster', cursive; 
+            font-size: 2.5rem; 
+            margin: 10px 0;
+            text-shadow: 0px 0px 2px #000000; 
+            -webkit-text-stroke: 1px #000000; 
+        }
+        .confetti {
             position: absolute;
             top: 0;
             left: 0;
@@ -99,7 +106,12 @@
 </head>
 <body>
     <h1>🎉 Lets go! 🎉</h1>
+    <h2>🎁🎄💛</h2>
     <img src="lark.jpg" alt="Larkin Poe Concert Tickets">
+    <audio controls autoplay loop>
+        <source src="the-deep-stays-down.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="confetti">
         <div class="piece" style="left: 5%; --hue: 0.8; --time: 1.2;"></div>
         <div class="piece" style="left: 15%; --hue: 0.4; --time: 0.5;"></div>
@@ -115,11 +127,6 @@
         <div class="emoji" style="left: 70%; --time: 1.2;">🎁</div>
         <div class="emoji" style="left: 80%; --time: 0.8;">🎄</div>
         <div class="emoji" style="left: 90%; --time: 1.5;">💛</div>
-
-        <audio controls>
-            <source src="larkin_poe_-_deep_stays_down.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
     </div>
 </body>
 </html>
